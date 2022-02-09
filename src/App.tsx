@@ -1,5 +1,5 @@
 export function App() {
   return (
-    <h1>Desafio</h1>
+    <h1>Simulador de Investimentos</h1>
   )
 }
