@@ -1,0 +1,23 @@
+h2 {
+    margin-bottom: 1em;
+}
+
+.cardContainer {
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 30vh;
+    display: grid;  
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 3em;
+}
+
+.card {
+    height: 50%;
+    padding: 1em;
+    background: #F4F4F4;
+    box-shadow: 0 0 0.5em gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
