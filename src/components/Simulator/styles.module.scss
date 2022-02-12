@@ -5,3 +5,11 @@
         margin-bottom: 1em;
     }
 }
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    margin: 0;
+    height: 80%;
+}
