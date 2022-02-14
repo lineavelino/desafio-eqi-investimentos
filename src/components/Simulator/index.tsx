@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+import { api } from '../../services/api';
 import styles from './styles.module.scss';
 
 type Indicators = {
@@ -6,6 +8,16 @@ type Indicators = {
 }
 
 export function Simulator() {
+    const [cdi, setCdi] = useState<Indicators>()
+    const [ipca, setIpca] = useState<Indicators>()
+
+    useEffect(() => {
+        api.get<Indicators[]>('indicadores').then(response => {
+            setCdi(response.data[0])
+            setIpca(response.data[1])
+        });
+    }, []);
+
     return (
         <main className={styles.container}>
             <h2>Simulador</h2>
@@ -45,12 +57,12 @@ export function Simulator() {
 
                 <label htmlFor="ipca">
                     IPCA (ao ano)<br />
-                    <input type="number" />
+                    <input type="text" value={ipca?.valor + "%"} />
                 </label>
 
                 <label htmlFor="cdi">
                     CDI (ao ano)<br />
-                    <input type="number" />
+                    <input type="text" value={cdi?.valor + "%"} />
                 </label>
             </form>
         </main>
