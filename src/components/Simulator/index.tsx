@@ -64,6 +64,11 @@ export function Simulator() {
                     CDI (ao ano)<br />
                     <input type="text" value={cdi?.valor + "%"} />
                 </label>
+
+                <div>
+                    <button type="submit">Limpar campos</button>
+                    <button type="submit">Simular</button>
+                </div>
             </form>
         </main>
     )
