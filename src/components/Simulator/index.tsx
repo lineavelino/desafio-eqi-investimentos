@@ -1,5 +1,10 @@
 import styles from './styles.module.scss';
 
+type Indicators = {
+    nome: string;
+    valor: number;
+}
+
 export function Simulator() {
     return (
         <main className={styles.container}>
