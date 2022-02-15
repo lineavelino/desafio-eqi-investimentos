@@ -57,12 +57,12 @@ export function Simulator() {
 
                 <label htmlFor="ipca">
                     IPCA (ao ano)<br />
-                    <input type="text" value={ipca?.valor + "%"} />
+                    <input type="text" value={ipca?.valor + "%"} readOnly />
                 </label>
 
                 <label htmlFor="cdi">
                     CDI (ao ano)<br />
-                    <input type="text" value={cdi?.valor + "%"} />
+                    <input type="text" value={cdi?.valor + "%"} readOnly />
                 </label>
 
                 <div>
