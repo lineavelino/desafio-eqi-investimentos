@@ -1,5 +1,16 @@
 import styles from "./styles.module.scss"
 
+type Results = {
+    tipoRendimento: string;
+    tipoIndexacao: string;
+    valorFinalBruto: number;
+    aliquotaIr: number;
+    valorPagoIr: number;
+    valorFinalLiquido: number;
+    valorTotalInvestido: number;
+    ganhoLiquido: number;
+}
+
 export function Results() {
     return (
         <main>
