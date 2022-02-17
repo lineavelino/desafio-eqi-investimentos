@@ -23,16 +23,24 @@ export function Simulator() {
             <h2>Simulador</h2>
             <form className={styles.formContainer}>
                 <label htmlFor="yield">
-                    Rendimento <br />
-                    <input type="button" value="Bruto" />
-                    <input type="button" value="Líquido" />
+                    <p>Rendimento</p>
+                    <input type="radio" id="bruto" name="yield" value="Bruto" checked />
+                    <label htmlFor="bruto" className={styles.borderLeft}>Bruto</label>
+
+                    <input type="radio" id="liquido" name="yield" value="Líquido" />
+                    <label htmlFor="liquido" className={styles.borderRight}>Líquido</label>
                 </label>
 
                 <label htmlFor="indexingTypes">
-                    Tipos de indexação<br />
-                    <input type="button" value="PRÉ" />
-                    <input type="button" value="POS" />
-                    <input type="button" value="FIXADO" />
+                    <p>Tipos de indexação</p>
+                    <input type="radio" id="pre" name="indexingTypes" value="PRÉ" />
+                    <label htmlFor="pre" className={styles.borderLeft}>PRÉ</label>
+
+                    <input type="radio" id="pos" name="indexingTypes" value="PÓS" checked />
+                    <label htmlFor="pos">PÓS</label>
+
+                    <input type="radio" id="fixado" name="indexingTypes" value="FIXADO" />
+                    <label htmlFor="fixado" className={styles.borderRight}>FIXADO</label>
                 </label>
 
                 <label htmlFor="initialDeposit">
