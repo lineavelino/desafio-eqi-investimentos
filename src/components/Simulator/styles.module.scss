@@ -13,8 +13,9 @@
     margin: 0;
     height: 65%;
 
-    p {
-        margin-bottom: 2em;
+    .options {
+        display: flex;
+        flex-direction: row;
     }
 
     input[type="radio"] {
