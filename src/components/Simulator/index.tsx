@@ -25,55 +25,55 @@ export function Simulator() {
                 <label htmlFor="yield">
                     <p>Rendimento</p>
                     <div className={styles.options}>
-                    <input type="radio" id="bruto" name="yield" value="Bruto" checked />
-                    <label htmlFor="bruto" className={styles.borderLeft}>Bruto</label>
+                        <input type="radio" id="bruto" name="yield" value="Bruto" checked />
+                        <label htmlFor="bruto" className={styles.borderLeft}>Bruto</label>
 
-                    <input type="radio" id="liquido" name="yield" value="Líquido" />
-                    <label htmlFor="liquido" className={styles.borderRight}>Líquido</label>
+                        <input type="radio" id="liquido" name="yield" value="Líquido" />
+                        <label htmlFor="liquido" className={styles.borderRight}>Líquido</label>
                     </div>
                 </label>
 
                 <label htmlFor="indexingTypes">
                     <p>Tipos de indexação</p>
                     <div className={styles.options}>
-                    <input type="radio" id="pre" name="indexingTypes" value="PRÉ" />
-                    <label htmlFor="pre" className={styles.borderLeft}>PRÉ</label>
+                        <input type="radio" id="pre" name="indexingTypes" value="PRÉ" />
+                        <label htmlFor="pre" className={styles.borderLeft}>PRÉ</label>
 
-                    <input type="radio" id="pos" name="indexingTypes" value="PÓS" checked />
-                    <label htmlFor="pos">PÓS</label>
+                        <input type="radio" id="pos" name="indexingTypes" value="PÓS" checked />
+                        <label htmlFor="pos">PÓS</label>
 
-                    <input type="radio" id="fixado" name="indexingTypes" value="FIXADO" />
-                    <label htmlFor="fixado" className={styles.borderRight}>FIXADO</label>
+                        <input type="radio" id="fixado" name="indexingTypes" value="FIXADO" />
+                        <label htmlFor="fixado" className={styles.borderRight}>FIXADO</label>
                     </div>
                 </label>
 
                 <label htmlFor="initialDeposit">
-                    Aporte Inicial<br />
+                    <p>Aporte Inicial</p>
                     <input type="number" />
                 </label>
 
                 <label htmlFor="monthlyDeposit">
-                    Aporte Mensal<br />
+                    <p>Aporte Mensal</p>
                     <input type="number" />
                 </label>
 
                 <label htmlFor="deadline">
-                    Prazo (em meses)<br />
+                    <p>Prazo (em meses)</p>
                     <input type="number" />
                 </label>
 
                 <label htmlFor="profitability">
-                    Rentabilidade<br />
+                    <p>Rentabilidade</p>
                     <input type="number" />
                 </label>
 
                 <label htmlFor="ipca">
-                    IPCA (ao ano)<br />
+                    <p>IPCA (ao ano)</p>
                     <input type="text" value={ipca?.valor + "%"} readOnly />
                 </label>
 
                 <label htmlFor="cdi">
-                    CDI (ao ano)<br />
+                    <p>CDI (ao ano)</p>
                     <input type="text" value={cdi?.valor + "%"} readOnly />
                 </label>
 
