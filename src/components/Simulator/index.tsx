@@ -76,12 +76,12 @@ export function Simulator() {
                     <p>CDI (ao ano)</p>
                     <input type="text" value={cdi?.valor + "%"} readOnly />
                 </label>
-
-                <div>
-                    <button type="submit">Limpar campos</button>
-                    <button type="submit">Simular</button>
-                </div>
             </form>
+
+            <div className={styles.buttons}>
+                <button type="submit">Limpar campos</button>
+                <button type="submit" className={styles.simular}>Simular</button>
+            </div>
         </main>
     )
 }

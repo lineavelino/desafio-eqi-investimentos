@@ -62,3 +62,25 @@
 .borderRight {
     border-radius: 0em 0.5em 0.5em 0em;
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0em;
+}
+
+.simular {
+    background-color: #969696;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    width: 42%;
+    margin: 0.5em;
+    padding: 1em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    font-size: larger;
+    font-weight: 900;
+}
