@@ -24,15 +24,18 @@ export function Simulator() {
             <form className={styles.formContainer}>
                 <label htmlFor="yield">
                     <p>Rendimento</p>
+                    <div className={styles.options}>
                     <input type="radio" id="bruto" name="yield" value="Bruto" checked />
                     <label htmlFor="bruto" className={styles.borderLeft}>Bruto</label>
 
                     <input type="radio" id="liquido" name="yield" value="Líquido" />
                     <label htmlFor="liquido" className={styles.borderRight}>Líquido</label>
+                    </div>
                 </label>
 
                 <label htmlFor="indexingTypes">
                     <p>Tipos de indexação</p>
+                    <div className={styles.options}>
                     <input type="radio" id="pre" name="indexingTypes" value="PRÉ" />
                     <label htmlFor="pre" className={styles.borderLeft}>PRÉ</label>
 
@@ -41,6 +44,7 @@ export function Simulator() {
 
                     <input type="radio" id="fixado" name="indexingTypes" value="FIXADO" />
                     <label htmlFor="fixado" className={styles.borderRight}>FIXADO</label>
+                    </div>
                 </label>
 
                 <label htmlFor="initialDeposit">
