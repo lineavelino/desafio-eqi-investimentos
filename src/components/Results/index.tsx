@@ -1,3 +1,4 @@
+import Graphic from "../Graphic"
 import styles from "./styles.module.scss"
 
 type Results = {
@@ -47,6 +48,8 @@ export function Results() {
                     <p>R$ 47.000,00</p>
                 </div>
             </div>
+
+            <Graphic />
         </main>
     )
 }
