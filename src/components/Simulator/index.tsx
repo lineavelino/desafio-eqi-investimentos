@@ -25,7 +25,7 @@ export function Simulator() {
                 <label htmlFor="yield">
                     <p>Rendimento</p>
                     <div className={styles.options}>
-                        <input type="radio" id="bruto" name="yield" value="Bruto" checked />
+                        <input type="radio" id="bruto" name="yield" value="Bruto" checked readOnly />
                         <label htmlFor="bruto" className={styles.borderLeft}>Bruto</label>
 
                         <input type="radio" id="liquido" name="yield" value="Líquido" />
@@ -39,7 +39,7 @@ export function Simulator() {
                         <input type="radio" id="pre" name="indexingTypes" value="PRÉ" />
                         <label htmlFor="pre" className={styles.borderLeft}>PRÉ</label>
 
-                        <input type="radio" id="pos" name="indexingTypes" value="PÓS" checked />
+                        <input type="radio" id="pos" name="indexingTypes" value="PÓS" checked readOnly />
                         <label htmlFor="pos">PÓS</label>
 
                         <input type="radio" id="fixado" name="indexingTypes" value="FIXADO" />
